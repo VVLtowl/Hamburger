@@ -18,7 +18,7 @@ public class PosYRelife : MonoBehaviour
     {
         if (transform.position.y < -5.0f)
         {
-            OnRelife();
+            if (OnRelife != null) OnRelife();
             transform.position = new Vector3(0, 3, 0);
         }
     }
